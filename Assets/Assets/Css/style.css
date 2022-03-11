@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../Fonts/free-fa-brands-400.woff2);
+}
+@font-face {
+    font-family: "font-2";
+    src: url(../Fonts/free-fa-regular-400.woff2);
+}
+@font-face {
+    font-family: "font-3";
+    src: url(../Fonts/free-fa-solid-900.woff2);
+}
+@font-face {
+    font-family: "font-4";
+    src: url(../Fonts/jizaRExUiTo99u79D0KExQ.woff2);
+}
+@font-face {
+    font-family: "font-5";
+    src: url(../Fonts/jizfRExUiTo99u79B_mh0O6tLQ.woff2);
+}
+
+:root {
+    --primary-color: #d35649;
+    --primary-gray : #98a5a5;
+    --light-gray : #eee;
+    --primary-blue : #509bd7;
+    --gray-footer : #1f1f1f;
+    --gray-footer-btn : #444;
+    --primary-purple : #575a89;
+}
+.primary-color {
+    color: var(--primary-color);
+}
+.primary-gray {
+    color: var(--primary-gray);
+}
+.light-gray {
+    color: var(--light-gray);
+}
+.primary-blue {
+    color: var(--primary-blue);
+}
+.gray-footer {
+    color: var(--gray-footer);
+}
+.gray-footer-btn {
+    color: var(--gray-footer-btn);
+}
+.primary-purple {
+    color: var(--primary-purple);
+}
+nav {
+    background-color: var(--primary-color);
+}
+
+#couleur-svg {
+    fill: var(--light-gray);
+    transition: ease-in 0.2s all;
+}
+#couleur-svg:hover {
+    fill: var(--primary-gray);
+}
+.cont1 ul li a:hover {
+    color: var(--primary-gray);
+}
+footer {
+    background-color: var(--gray-footer-btn);
+}
+footer p {
+    font-size: 0.5em;
+}
+footer figure {
+    margin-bottom: 0px;
+}
+footer svg{
+    margin: auto 20px;
+}
