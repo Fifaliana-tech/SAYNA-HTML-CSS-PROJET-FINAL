@@ -186,7 +186,7 @@ footer svg{
     padding: 4px;
     border: none;
     cursor: pointer;
-    width: 23%;
+    width: 39%;
     font-weight: bold;
 }
 .container5 .btn {
@@ -195,7 +195,7 @@ footer svg{
     padding: 4px;
     border: none;
     cursor: pointer;
-    width: 30%;
+    width: 61%;
     font-weight: bold;
 }
 @media (max-width: 768px) {
