@@ -223,6 +223,24 @@ footer svg{
     .steps{
         display: none;
     }
+    .container4 {
+        background-color: var(--primary-color);
+        height: 392px;
+    }
+    .container5 {
+        background-color: var(--gray-footer-btn);
+        height: 392px;
+    }
+    .container6 {
+        background-color: var(--primary-blue);
+        height: 392px;
+    }
+    .container5 .btn {
+        width: 75%;
+    }
+    .container4 .btn {
+        width: 44%;
+    }
 }
 @media (max-width: 1200px) {
     .bg-img h4 {
