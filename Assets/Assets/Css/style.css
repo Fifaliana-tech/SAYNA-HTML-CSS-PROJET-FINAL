@@ -161,51 +161,46 @@ footer svg{
     background-color: var(--primary-color);
     height: 300px;
     color: var(--light-gray);
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-around;
 }
+
 .container5 {
-    background-color: var(--gray-footer-btn);
+    background-color: var(--primary-gray);
     height: 300px;
     color: var(--light-gray);
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-around;
 }
+
 .container6 {
     background-color: var(--primary-blue);
     height: 300px;
     color: var(--light-gray);
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-around;
 }
 .container4 .textes, .container5 .textes, .container6 .textes{
     width: 44%;
+    position: absolute;
 }
 
-.container4 .photo img, .container5 .photo img, .container6 .photo img {
+.container4 img, .container5 img, .container6 img {
     border-radius: 50%;
-    min-width: 35%;
-    min-height: 242px;
+    width: 300px;
+    height: 233px;
 }
-.container4 .btn{
-    background-color: var(--light-gray);
-    color: var(--primary-color);
-    padding: 4px;
-    border: none;
-    cursor: pointer;
-    width: 23%;
-    font-weight: bold;
-}
-.container5 .btn {
-    background-color: var(--light-gray);
-    color: var(--gray-footer-btn);
-    padding: 4px;
-    border: none;
-    cursor: pointer;
-    width: 30%;
-    font-weight: bold;
-}
+
 @media (max-width: 768px) {
 
     .cont1 ul {
         justify-content: center;
         align-items: center;
     }
-    .container input{
+    .container1 input{
         width: 100%;
         padding: 4px;
         border: none;
@@ -214,32 +209,90 @@ footer svg{
         opacity:0.6;
       }
       /* Set a style for the submit button */
-    .container .btn {
+    .container1 .btn {
         background-color: var(--primary-color);
         padding: 5px 20px;
         width: 100%;
         margin-left: 0;
       }
-    .steps{
+    .steps {
         display: none;
+    }
+    .box {
+        flex-direction: column-reverse;
+    }
+    .container4, .container5, .container6 {
+        position: relative;
+        text-align: center;
     }
     .container4 {
         background-color: var(--primary-color);
-        height: 392px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        order: 2;
+    }
+    .container4 img, .container5 img, .container6 img {
+        border-radius: 56px;
+        width: 100%;
+        height: 242px;
+        position: initial;
+        justify-content: center;
+    }
+    .container4 .textes, .container5 .textes, .container6 .textes {
+        width: 83%;
+        padding: 18px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container4 .textes h1, .container5 .textes h1, .container6 .textes h1 {
+        font-size: 1em;
     }
     .container5 {
-        background-color: var(--gray-footer-btn);
-        height: 392px;
+        background-color: var(--primary-gray);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        order: 1;
     }
     .container6 {
         background-color: var(--primary-blue);
-        height: 392px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        order: 3;
+    }
+    .container4 .btn, .container5 .btn{
+        background-color: transparent;
+        position: absolute;
+        margin-top: 89px;
+        top: 49%;
+    }
+}
+@media (min-width: 768px) {
+    .container4 .btn {
+        background-color: var(--light-gray);
+        color: var(--primary-color);
+        padding: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        width: auto;
+        border-radius: 0;
     }
     .container5 .btn {
-        width: 75%;
-    }
-    .container4 .btn {
-        width: 44%;
+        background-color: var(--light-gray);
+        color: var(--primary-gray);
+        padding: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        width: auto;
+        border-radius: 0;
     }
 }
 @media (max-width: 1200px) {
