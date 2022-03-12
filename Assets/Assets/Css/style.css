@@ -160,19 +160,34 @@ footer svg{
 .container4 {
     background-color: var(--primary-color);
     height: 300px;
+    color: var(--light-gray);
 }
-.container4 .photo img{
+.container5 {
+    background-color: var(--gray-footer-btn);
+    height: 300px;
+    color: var(--light-gray);
+}
+.container6 {
+    background-color: var(--primary-blue);
+    height: 300px;
+    color: var(--light-gray);
+}
+.container4 .textes, .container5 .textes, .container6 .textes{
+    width: 44%;
+}
+.container4 .photo img, .container5 .photo img, .container6 .photo img{
     border-radius: 50%;
+    width: 30%;
+    height: 180px;
 }
-.container4 .btn {
+.container4 .btn, .container5 .btn, .container6 .btn{
     background-color: var(--light-gray);
     color: var(--primary-color);
     padding: 4px;
     border: none;
     cursor: pointer;
-    width: 14%;
+    width: 23%;
     font-weight: bold;
-    margin-left: -5px;
 }
 @media (max-width: 768px) {
 
@@ -195,7 +210,7 @@ footer svg{
         width: 100%;
         margin-left: 0;
       }
-    .container2{
+    .steps{
         display: none;
     }
 }
