@@ -180,13 +180,22 @@ footer svg{
     width: 30%;
     height: 180px;
 }
-.container4 .btn, .container5 .btn, .container6 .btn{
+.container4 .btn{
     background-color: var(--light-gray);
     color: var(--primary-color);
     padding: 4px;
     border: none;
     cursor: pointer;
     width: 23%;
+    font-weight: bold;
+}
+.container5 .btn {
+    background-color: var(--light-gray);
+    color: var(--gray-footer-btn);
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
     font-weight: bold;
 }
 @media (max-width: 768px) {
