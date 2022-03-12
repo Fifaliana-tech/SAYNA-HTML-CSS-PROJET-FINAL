@@ -51,6 +51,7 @@
 }
 nav {
     background-color: var(--primary-color);
+    height: 90px;
 }
 
 #couleur-svg {
@@ -60,8 +61,74 @@ nav {
 #couleur-svg:hover {
     fill: var(--primary-gray);
 }
+.cont1 .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 2px 1px 0px #5a639f;
+}
 .cont1 ul li a:hover {
     color: var(--primary-gray);
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url(../Images/group-1.jpg);
+  
+    /* Control the height of the image */
+    min-height: 410px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .bg-img h4{
+    color: var(--light-gray);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    margin-top: 4%;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    width: 44%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    border-radius: 8px;
+  }
+  .container h6{
+      font-family: 'font-5';
+  }
+  /* Full-width input fields */
+.container input{
+    width: 50%;
+    padding: 2px;
+    border-right: none;
+    border: 2px solid var(--primary-gray);
+    border-radius: 3px;
+}
+#col-bg-input{
+    background: white;
+}
+  /* Set a style for the submit button */
+.container .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    width: 14%;
+    opacity: 0.9;
+    font-weight: bold;
+    margin-left: -5px;
+}
+.btn:hover {
+    opacity: 1;
 }
 footer {
     background-color: var(--gray-footer-btn);
@@ -74,4 +141,37 @@ footer figure {
 }
 footer svg{
     margin: auto 20px;
+}
+@media (max-width: 768px) {
+
+    .cont1 ul {
+        justify-content: center;
+        align-items: center;
+    }
+    .container input{
+        width: 100%;
+        padding: 4px;
+        border: none;
+        background: #f1f1f1;
+        border: 1px solid var(--primary-gray);
+        opacity:0.6;
+      }
+      /* Set a style for the submit button */
+    .container .btn {
+        background-color: var(--primary-color);
+        padding: 5px 20px;
+        width: 100%;
+        margin-left: 0;
+      }
+    
+}
+@media (max-width: 1200px) {
+    .bg-img h4 {
+        margin-top: 20%;
+    }
+    .container {
+        position: relative;
+        margin: 1%;
+        width: 60%;
+    }
 }
