@@ -153,6 +153,26 @@ footer svg{
     font-size: 1.3em;
     color: var(--primary-color);
     font-weight: 700;
+} 
+.container2 {
+    height: 430px;
+}
+.container4 {
+    background-color: var(--primary-color);
+    height: 300px;
+}
+.container4 .photo img{
+    border-radius: 50%;
+}
+.container4 .btn {
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    width: 14%;
+    font-weight: bold;
+    margin-left: -5px;
 }
 @media (max-width: 768px) {
 
@@ -175,7 +195,9 @@ footer svg{
         width: 100%;
         margin-left: 0;
       }
-    
+    .container2{
+        display: none;
+    }
 }
 @media (max-width: 1200px) {
     .bg-img h4 {
