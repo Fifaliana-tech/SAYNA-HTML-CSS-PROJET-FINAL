@@ -142,6 +142,18 @@ footer figure {
 footer svg{
     margin: auto 20px;
 }
+.steps .logo {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 800;
+    font-family: 'font-5';
+    font-size: 1em;
+}
+.contain1 .work {
+    font-size: 1.3em;
+    color: var(--primary-color);
+    font-weight: 700;
+}
 @media (max-width: 768px) {
 
     .cont1 ul {
