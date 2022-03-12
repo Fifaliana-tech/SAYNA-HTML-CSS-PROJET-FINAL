@@ -175,10 +175,11 @@ footer svg{
 .container4 .textes, .container5 .textes, .container6 .textes{
     width: 44%;
 }
-.container4 .photo img, .container5 .photo img, .container6 .photo img{
+
+.container4 .photo img, .container5 .photo img, .container6 .photo img {
     border-radius: 50%;
-    min-width: 55%;
-    min-height: 206px;
+    min-width: 35%;
+    min-height: 242px;
 }
 .container4 .btn{
     background-color: var(--light-gray);
