@@ -222,6 +222,30 @@ footer svg{
     width: 300px;
     height: 233px;
 }
+.container7 {
+    display: flex;
+    background-color: #1f1f1f;
+    height: 123px;
+}
+.container7 .boutons {
+    width: 60%;
+}
+.container7 .boutons p{
+    color: var(--light-gray);
+    width: auto;
+    font-size: 0.7em;
+    border-top: 2px solid var(--primary-gray);
+    border-bottom: 2px solid var(--primary-gray);
+    text-align: center;
+}
+.container7 .boutons .rond {
+    border-radius: 50%;
+    border: 2px solid var(--primary-gray);
+    margin-bottom: 0;
+}
+#couleur-svg-rond {
+    fill: var(--light-gray);
+}
 
 @media (max-width: 576px) {
     .cont1 ul a p{
