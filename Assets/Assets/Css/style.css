@@ -70,43 +70,42 @@ nav {
     color: var(--primary-gray);
 }
 
-.bg-img {
+.container2 {
     /* The image used */
     background-image: url(../Images/group-1.jpg);
   
     /* Control the height of the image */
-    min-height: 410px;
+    height: 407px;
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  .bg-img h4{
-    color: var(--light-gray);
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.1),
-                 0px 18px 23px rgba(0,0,0,0.1);
-    margin-top: 4%;
-  }
-  
-  /* Add styles to the form container */
-  .container {
+}
+.container2 form {
     justify-content: center;
     align-items: center;
-    margin-top: 7%;
     width: 44%;
     background-color: whitesmoke;
     opacity: 0.8;
     border-radius: 8px;
-  }
-  .container h6{
+    margin-top: -75px;
+}
+.container2 h4{
+    color: var(--light-gray);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    margin-top: 70px;
+}
+
+.container2 h6{
       font-family: 'font-5';
-  }
+}
   /* Full-width input fields */
-.container input{
-    width: 50%;
+.container2 input{
+    width: auto;
     padding: 2px;
     border-right: none;
     border: 2px solid var(--primary-gray);
@@ -116,20 +115,37 @@ nav {
     background: white;
 }
   /* Set a style for the submit button */
-.container .btn {
+.container2 .btn {
     background-color: var(--primary-color);
     color: white;
     padding: 4px;
     border: none;
     cursor: pointer;
-    width: 14%;
+    width: auto;
     opacity: 0.9;
     font-weight: bold;
     margin-left: -5px;
 }
+.container2 .contwork {
+    margin-top: -196px;
+}
+.container2 .work {
+    background-color: var(--light-gray);
+    color: black;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+    font-weight: bold;
+}
 .btn:hover {
     opacity: 1;
 }
+.steps {
+    margin: auto;
+}
+
 footer {
     background-color: var(--gray-footer-btn);
 }
@@ -148,6 +164,7 @@ footer svg{
     font-weight: 800;
     font-family: 'font-5';
     font-size: 1em;
+    height: 68px;
 }
 /* .box1 {
     flex-direction: column;
@@ -157,9 +174,17 @@ footer svg{
     font-size: 1.3em;
     color: var(--primary-color);
     font-weight: 700;
-} 
-.container2 {
-    height: 430px;
+}
+.contain2 .part1, .contain2 .part2 {
+    height: 369px;
+}
+.contain2 .part1 p, .contain2 .part2 p {
+    height: 250px;
+}
+
+.contain2 .parts {
+    height: 205px;
+    margin-bottom: 20px;
 }
 .container4 {
     background-color: var(--primary-color);
@@ -198,11 +223,19 @@ footer svg{
     height: 233px;
 }
 
+@media (max-width: 576px) {
+    .cont1 ul a p{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
 
     .cont1 ul {
         justify-content: center;
         align-items: center;
+    }
+    .cont1 ul a {
+        padding: 0;
     }
     .container1 input{
         width: 100%;
@@ -218,7 +251,15 @@ footer svg{
         padding: 5px 20px;
         width: 100%;
         margin-left: 0;
-      }
+    }
+    .container2 h4 {
+        margin-top: 26px;
+        font-size: 1.2em;
+        width: auto;
+    }
+    .container2 form {
+        width: auto;
+    }
     .steps {
         display: none;
     }
@@ -249,13 +290,17 @@ footer svg{
     }
     .container4 .textes, .container5 .textes, .container6 .textes {
         width: 83%;
-        padding: 18px;
+        height: 2vh;
         text-align: justify;
         display: flex;
         flex-direction: column-reverse;
     }
     .container4 .textes h1, .container5 .textes h1, .container6 .textes h1 {
         font-size: 1em;
+    }
+    .container4 .textes p, .container5 .textes p, .container6 .textes p {
+        line-height: initial;
+        order: 2;
     }
     .container5 {
         background-color: var(--primary-gray);
@@ -274,23 +319,27 @@ footer svg{
     }
     .container4 .btn {
         background-color: transparent;
-        position: absolute;
-        margin-top: 89px;
-        top: 60px;
-        color: var(--primary-color);
+        position: relative;
+        top: 50px;
+        color: var(--primary-gray);
         font-weight: bold;
-        width: auto;
+        width: 116px;
+        height: 50px;
         padding: 0;
+        order: 1;
+        margin-left: -5px;
     }
     .container5 .btn{
         background-color: transparent;
-        position: absolute;
-        margin-top: 89px;
-        top: 60px;
-        color: var(--primary-gray);
+        position: relative;
+        top: 45px;
+        color: var(--primary-color);
         font-weight: bold;
-        width: auto;
+        width: 210px;
+        height: 50px;
         padding: 0;
+        order: 1;
+        margin-left: -5px;
     }
 }
 @media (min-width: 768px) {
@@ -304,7 +353,6 @@ footer svg{
         padding: 4px;
         border: none;
         cursor: pointer;
-        font-weight: bold;
         width: auto;
         border-radius: 0;
     }
@@ -314,18 +362,7 @@ footer svg{
         padding: 4px;
         border: none;
         cursor: pointer;
-        font-weight: bold;
         width: auto;
         border-radius: 0;
-    }
-}
-@media (max-width: 1200px) {
-    .bg-img h4 {
-        margin-top: 20%;
-    }
-    .container {
-        position: relative;
-        margin: 1%;
-        width: 60%;
     }
 }
