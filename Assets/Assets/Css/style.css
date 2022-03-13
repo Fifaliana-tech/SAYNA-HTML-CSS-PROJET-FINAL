@@ -149,6 +149,10 @@ footer svg{
     font-family: 'font-5';
     font-size: 1em;
 }
+/* .box1 {
+    flex-direction: column;
+    margin: 0;
+} */
 .contain1 .work {
     font-size: 1.3em;
     color: var(--primary-color);
@@ -218,7 +222,10 @@ footer svg{
     .steps {
         display: none;
     }
-    .box {
+    .box1 {
+        display: none;
+    }
+    .box2 {
         flex-direction: column-reverse;
     }
     .container4, .container5, .container6 {
@@ -231,7 +238,6 @@ footer svg{
         align-items: center;
         align-content: center;
         margin: 0;
-        order: 2;
     }
     .container4 img, .container5 img, .container6 img {
         border-radius: 56px;
@@ -256,7 +262,6 @@ footer svg{
         align-items: center;
         align-content: center;
         margin: 0;
-        order: 1;
     }
     .container6 {
         background-color: var(--primary-blue);
@@ -264,16 +269,32 @@ footer svg{
         align-items: center;
         align-content: center;
         margin: 0;
-        order: 3;
     }
-    .container4 .btn, .container5 .btn{
+    .container4 .btn {
         background-color: transparent;
         position: absolute;
         margin-top: 89px;
-        top: 49%;
+        top: 60px;
+        color: var(--primary-color);
+        font-weight: bold;
+        width: auto;
+        padding: 0;
+    }
+    .container5 .btn{
+        background-color: transparent;
+        position: absolute;
+        margin-top: 89px;
+        top: 60px;
+        color: var(--primary-gray);
+        font-weight: bold;
+        padding: 0;
     }
 }
 @media (min-width: 768px) {
+
+    .box2 {
+        display: none;
+    }
     .container4 .btn {
         background-color: var(--light-gray);
         color: var(--primary-color);
