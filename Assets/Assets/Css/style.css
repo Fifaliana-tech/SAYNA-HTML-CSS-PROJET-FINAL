@@ -238,6 +238,7 @@ footer svg{
         align-items: center;
         align-content: center;
         margin: 0;
+        order: 1;
     }
     .container4 img, .container5 img, .container6 img {
         border-radius: 56px;
@@ -262,6 +263,7 @@ footer svg{
         align-items: center;
         align-content: center;
         margin: 0;
+        order: 1;
     }
     .container6 {
         background-color: var(--primary-blue);
@@ -287,6 +289,7 @@ footer svg{
         top: 60px;
         color: var(--primary-gray);
         font-weight: bold;
+        width: auto;
         padding: 0;
     }
 }
