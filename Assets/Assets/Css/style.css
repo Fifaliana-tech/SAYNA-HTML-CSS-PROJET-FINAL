@@ -227,6 +227,12 @@ footer svg{
     background-color: #1f1f1f;
     height: 123px;
 }
+.container7 {
+    display: flex;
+    background-color: #1f1f1f;
+    height: 123px;
+    border-top: 0px;
+}
 .container7 .boutons {
     width: 60%;
 }
