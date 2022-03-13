@@ -246,12 +246,6 @@ footer svg{
 #couleur-svg-rond {
     fill: var(--light-gray);
 }
-
-@media (max-width: 576px) {
-    .cont1 ul a p{
-        display: none;
-    }
-}
 @media (max-width: 768px) {
 
     .cont1 ul {
@@ -260,6 +254,9 @@ footer svg{
     }
     .cont1 ul a {
         padding: 0;
+    }
+    .cont1 ul a p{
+        display: none;
     }
     .container1 input{
         width: 100%;
@@ -366,6 +363,9 @@ footer svg{
         padding: 0;
         order: 1;
         margin-left: -5px;
+    }
+    .container7 {
+        display: none;
     }
 }
 @media (min-width: 768px) {
