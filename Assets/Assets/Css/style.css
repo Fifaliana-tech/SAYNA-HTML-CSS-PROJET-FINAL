@@ -494,6 +494,20 @@ footer svg{
 .images img{
     background-color: #d35649;
     padding: 20px;
-    width: 421px;
+    width: 291px;
     height: auto;
+}
+.cont-images {
+    width: 80%;
+}
+.cont-images a {
+    margin: 20px;
+}
+.cont-images h4 {
+    color: var(--primary-gray);
+}
+@media (max-width: 768px) {
+    .container7, .container8{
+        display: none;
+    }
 }
