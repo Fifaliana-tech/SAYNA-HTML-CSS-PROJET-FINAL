@@ -49,6 +49,7 @@
 .primary-purple {
     color: var(--primary-purple);
 }
+/* -----STYLE index.html------- */
 nav {
     background-color: var(--primary-color);
     height: 90px;
@@ -472,4 +473,16 @@ footer svg{
         color: var(--primary-gray);
         text-decoration: none;
     }
+}
+
+/* -----STYLE search.html------- */
+.cont-search1 {
+    margin-top: 20px;
+}
+.cont-search1, .cont-search2 {
+    background-color: var(--light-gray);
+}
+.cont-search1 h1 {
+    color: var(--primary-gray);
+    font-weight: 600;
 }
