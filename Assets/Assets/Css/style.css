@@ -486,3 +486,14 @@ footer svg{
     color: var(--primary-gray);
     font-weight: 600;
 }
+.images {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.images img{
+    background-color: #d35649;
+    padding: 20px;
+    width: 421px;
+    height: auto;
+}
