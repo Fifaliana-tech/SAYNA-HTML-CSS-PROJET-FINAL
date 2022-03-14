@@ -56,7 +56,6 @@ nav {
 
 #couleur-svg {
     fill: var(--light-gray);
-    transition: ease-in 0.2s all;
 }
 #couleur-svg:hover {
     fill: var(--primary-gray);
@@ -117,14 +116,18 @@ nav {
   /* Set a style for the submit button */
 .container2 .btn {
     background-color: var(--primary-color);
-    color: white;
-    padding: 4px;
     border: none;
     cursor: pointer;
     width: auto;
     opacity: 0.9;
     font-weight: bold;
     margin-left: -5px;
+}
+
+.container2 .btn a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
 }
 .container2 .contwork {
     margin-top: -196px;
@@ -166,10 +169,14 @@ footer svg{
     font-size: 1em;
     height: 68px;
 }
-/* .box1 {
+.box1 {
     flex-direction: column;
     margin: 0;
-} */
+}
+
+.box2 {
+    flex-direction: column-reverse;
+}
 .contain1 .work {
     font-size: 1.3em;
     color: var(--primary-color);
@@ -235,22 +242,85 @@ footer svg{
 }
 .container7 .boutons {
     width: 60%;
+    display: flex;
 }
 .container7 .boutons p{
-    color: var(--light-gray);
     width: auto;
-    font-size: 0.7em;
+    font-size: 0.8vw;
+    font-weight: 600;
     border-top: 2px solid var(--primary-gray);
     border-bottom: 2px solid var(--primary-gray);
     text-align: center;
+    margin-top: 19px;
+}
+.container7 .boutons p a{
+    color: var(--light-gray);
+    text-decoration: none;
+}
+.container7 .boutons p a:hover{
+    color: var(--primary-gray);
 }
 .container7 .boutons .rond {
     border-radius: 50%;
     border: 2px solid var(--primary-gray);
     margin-bottom: 0;
+    padding: 0;
+    text-align: center;
 }
 #couleur-svg-rond {
     fill: var(--light-gray);
+}
+.rond svg{
+    margin-top: 14px;
+}
+.rond svg :hover{
+    color: var(--primary-gray); 
+}
+.container8 {
+    display: flex;
+    background-color: #1f1f1f;
+    height: 200px;
+    border-top: 0px;
+    color: var(--light-gray);
+}
+.container8 .col-4 {
+    height: 180px;
+}
+.container8 h4 {
+    margin-bottom: 24px;
+}
+.container8 input {
+    width: auto;
+    background-color: transparent;
+    color: var(--light-gray);
+    border: 1px solid var(--primary-gray);
+    padding: 0;
+    border-right: 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+.container8 .btn {
+    background-color: var(--gray-footer-btn);
+    color: var(--light-gray);
+    width: auto;
+    border: 1px solid var(--primary-gray);
+}
+.container8 a {
+    color: var(--primary-color);
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.container8 a:hover{
+    text-decoration: underline;
+}
+.container8 span a {
+    color: var(--primary-color);
+}
+#couleur-svg2 {
+    fill: var(--light-gray);
+}
+#couleur-svg2:hover {
+    fill: var(--primary-blue);
 }
 @media (max-width: 768px) {
 
@@ -292,9 +362,6 @@ footer svg{
     }
     .box1 {
         display: none;
-    }
-    .box2 {
-        flex-direction: column-reverse;
     }
     .container4, .container5, .container6 {
         position: relative;
@@ -373,28 +440,36 @@ footer svg{
     .container7 {
         display: none;
     }
+    .container8 {
+        display: none;
+    }
 }
-@media (min-width: 768px) {
-
-    .box2 {
+@media (min-width: 769px) {
+    .box2{
         display: none;
     }
     .container4 .btn {
         background-color: var(--light-gray);
-        color: var(--primary-color);
         padding: 4px;
         border: none;
         cursor: pointer;
         width: auto;
         border-radius: 0;
     }
+    .container4 .btn a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
     .container5 .btn {
         background-color: var(--light-gray);
-        color: var(--primary-gray);
         padding: 4px;
         border: none;
         cursor: pointer;
         width: auto;
         border-radius: 0;
+    }
+    .container5 .btn a{
+        color: var(--primary-gray);
+        text-decoration: none;
     }
 }
