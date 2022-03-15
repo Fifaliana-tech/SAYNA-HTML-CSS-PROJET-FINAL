@@ -255,71 +255,73 @@
             </ul>
         </div>
     </nav>
-    <div class="row cont-search1 justify-content-center align-items-center text-center d-flex"">
+    <div class="row cont-search1 justify-content-center align-items-center text-center d-flex">
         <h1>Filter by location, host, subject, date, daytime:</h1>
-    </div>
-    <div class="row cont-search2 p-3 justify-content-center align-items-center text-center d-flex"">
-        <section class="col location">
-            <h2 class="py-2">Location</h2>
-            <form class="row justify-content-center align-items-center text-center d-flex">
-                <div class="mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="">
-                </div>
-            </form>
-        </section>
-        <section class="col host">
-            <h2 class="py-2">Host</h2>
-            <form class="row justify-content-center align-items-center text-center d-flex">
-                <div class="mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="">
-                </div>
-            </form>
-        </section>
-        <section class="col subject">
-            <h2 class="py-2">Subject</h2>
-            <form class="row justify-content-center align-items-center text-center d-flex">
-                <div class="mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="">
-                </div>
-            </form>
-        </section>
+        <div class="row box-forms p-3 justify-content-center align-items-center text-center d-flex">
 
-
-
-        <section class="col date1">
-            <h2 class="py-2">Initial date</h2>
-            <form class="row justify-content-center align-items-center text-center d-flex">
-                <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date"/>
-                  <span class="input-group-append">
-                    <span class="input-group-text bg-light d-block">
-                      <i class="fa fa-calendar"></i>
-                    </span>
-                  </span>
+            <section class="col-sm-6 col-md-2 col-lg-2 box mx-2 p-2">
+                <h2 class="py-2">Location</h2>
+                <form class="row justify-content-center align-items-center text-center d-flex">
+                    <input type="text" class="form-control" id="email" placeholder="">
+                </form>
+            </section>
+            <section class="box col-sm-6 col-md-2 col-lg-2 mx-2 p-2">
+                <h2 class="py-2">Host</h2>
+                <form class="row justify-content-center align-items-center text-center d-flex">
+                    <input type="text" class="form-control" id="email" placeholder="">
+                </form>
+            </section>
+            <section class="box col-sm-6 col-md-2 col-lg-2 mx-2 p-2">
+                <h2 class="py-2">Subject</h2>
+                <form class="row justify-content-center align-items-center text-center d-flex">
+                    <input type="text" class="form-control" id="email" placeholder="">
+                </form>
+            </section>
+            <section class="box col-sm-6 col-md-2 col-lg-2 mx-2 p-2">
+                <h2 class="py-2">Initial date</h2>
+                <form class="row justify-content-center align-items-center text-center d-flex">
+                    <div class="input-group date" id="datepicker">
+                      <input type="text" class="form-control" id="date"/>
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                </form>
+            </section>
+            <section class="box col-sm-6 col-md-2 col-lg-2 mx-2 p-2">
+                <h2 class="py-2">Final date</h2>
+                <form class="row justify-content-center align-items-center text-center d-flex">
+                    <div class="input-group date" id="datepicker">
+                      <input type="text" class="form-control" id="date"/>
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                </form>
+            </section>
+            <div class="box col-sm-6 col-md-2 col-lg-2 mx-2 p-2">
+                <h2 class="py-2">Day time</h2>
+                <div class="dropdown">
+                  <button class="btn list dropdown-toggle" type="button" data-toggle="dropdown">Choose...
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Normal</a></li>
+                    <li class="disabled"><a href="#">Disabled</a></li>
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Normal</a></li>
+                  </ul>
                 </div>
-            </form>
-        </section>
-        <section class="col date2">
-            <h2 class="py-2">Final date</h2>
-            <form class="row justify-content-center align-items-center text-center d-flex"">
-                <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date"/>
-                  <span class="input-group-append">
-                    <span class="input-group-text bg-light d-block">
-                      <i class="fa fa-calendar"></i>
-                    </span>
-                  </span>
-                </div>
-            </form>
-        </section>
-
-        <section class="col date2">
+            </div>
             <button type="button" class="btn btn-primary">Search</button>
-        </section>
-        <section class="col date2">
             <button type="button" class="btn btn-warning">Clear filter</button>
-        <section class="col date2">
+        </div>
+
     </div>
+    
 
     
     <section class="row images p-3 justify-content-center align-items-center text-center d-flex">

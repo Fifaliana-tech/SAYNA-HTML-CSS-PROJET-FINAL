@@ -476,15 +476,35 @@ footer svg{
 }
 
 /* -----STYLE search.html------- */
+.box-forms {
+    width: 90%;
+    margin: 12px;
+}
+.box-forms h2{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
 .cont-search1 {
     margin-top: 20px;
 }
-.cont-search1, .cont-search2 {
+.cont-search1 {
     background-color: var(--light-gray);
 }
 .cont-search1 h1 {
     color: var(--primary-gray);
     font-weight: 600;
+} 
+.cont-search2 {
+    width: 90%;
+}
+/* .boutons {
+    width: 18%;
+    height: 27px;
+    margin: 12px;
+} */
+.list {
+    background-color: white;
+    border: 1px solid #ced4da;
 }
 .images {
     width: 100%;
@@ -494,7 +514,7 @@ footer svg{
 .images img{
     background-color: #d35649;
     padding: 20px;
-    width: 291px;
+    width: 184px;
     height: auto;
 }
 .cont-images {
@@ -505,6 +525,9 @@ footer svg{
 }
 .cont-images h4 {
     color: var(--primary-gray);
+}
+#datepicker {
+    padding: 0;
 }
 @media (max-width: 768px) {
     .container7, .container8{
